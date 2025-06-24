@@ -27,6 +27,15 @@
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
+.btn-azul {
+  background-color: rgb(21, 123, 255);
+  color: white;
+  border: none;
+}
+.btn-azul:hover {
+  background-color: rgb(21, 123, 255);
+  color: white;
+}
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #3a3939;  /* The default color of the main navmenu links */
