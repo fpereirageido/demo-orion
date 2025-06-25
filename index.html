@@ -543,112 +543,151 @@
 
 
    
-    <!-- Productos Section -->
-    <section id="portfolio" class="portfolio section">
+<!-- Productos Section -->
+<section id="portfolio" class="portfolio section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Productos</h2>
-        <br>
-        <p class="description" style="color: #4a4a4a;"> <strong>No dude en consultarnos por nuestros canales de comunicación.</strong></p>
-      </div><!-- End Section Title -->
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Productos</h2>
+    <br>
+    <p class="text-center" style="color: #4a4a4a;"> 
+    Elegí tus modelos favoritos y escribinos para consultar disponibilidad y precio.
+    </p>
+  </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-          <style>
-    .eff-bar {
-    height: 8px;
-    border-radius: 4px;
-    background-color: #e9ecef;
-    overflow: hidden;
-    margin: 5px auto;
-    max-width: 120px;
-   }
-    .eff-fill {
-    height: 100%;
-    display: block;
-   }
-    .grade-D { width: 20%; background-color: #dc3545; }   /* Rojo */
-    .grade-C { width: 40%; background-color: #fd7e14; }   /* Naranja */
-    .grade-B { width: 60%; background-color: #ffc107; }   /* Amarillo */
-    .grade-A { width: 100%; background-color: #28a745; }  /* Verde */
-</style>
-<div class="table-responsive">
-  <table class="table table-bordered text-center align-middle">
-    <thead class="table-light">
-      <tr>
-        <th>Modelo</th>
-        <th>Altura</th>
-        <th>Diámetro</th>
-        <th>Potencia</th>
-        <th>Eficiencia Energética</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>10 L</td><td>54 cm</td><td>26 cm</td><td>600 W</td>
-        <td>
-          <div class="eff-bar"><span class="eff-fill grade-D"></span></div>
-          <small>"D" (Baja)</small>
-        </td>
-      </tr>
-      <tr>
-        <td>20 L</td><td>42 cm</td><td>39 cm</td><td>800 W</td>
-        <td>
-          <div class="eff-bar"><span class="eff-fill grade-C"></span></div>
-          <small>"C" (Moderada)</small>
-        </td>
-      </tr>
-      <tr>
-        <td>30 L</td><td>52 cm</td><td>39 cm</td><td>1000 W</td>
-        <td>
-          <div class="eff-bar"><span class="eff-fill grade-B"></span></div>
-          <small>"B" (Buena)</small>
-        </td>
-      </tr>
-      <tr>
-        <td>45 L</td><td>78 cm</td><td>39 cm</td><td>1000 W</td>
-        <td>
-          <div class="eff-bar"><span class="eff-fill grade-B"></span></div>
-          <small>"B" (Buena)</small>
-        </td>
-      </tr>
-      <tr>
-        <td>60 L</td><td>86 cm</td><td>39 cm</td><td>1700 W</td>
-        <td>
-          <div class="eff-bar"><span class="eff-fill grade-A"></span></div>
-          <small>"A" (Alta)</small>
-        </td>
-      </tr>
-      <tr>
-        <td>85 L</td><td>114 cm</td><td>39 cm</td><td>1700 W</td>
-        <td>
-          <div class="eff-bar"><span class="eff-fill grade-B"></span></div>
-          <small>"B" (Buena)</small>
-        </td>
-      </tr>
-      <tr>
-        <td>100 L</td><td>134 cm</td><td>39 cm</td><td>1700 W</td>
-        <td>
-          <div class="eff-bar"><span class="eff-fill grade-A"></span></div>
-          <small>"A" (Alta)</small>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+    <style>
+      .eff-bar {
+        height: 8px;
+        border-radius: 4px;
+        background-color: #e9ecef;
+        overflow: hidden;
+        margin: 5px auto;
+        max-width: 120px;
+      }
+      .eff-fill {
+        height: 100%;
+        display: block;
+      }
+      .grade-D { width: 20%; background-color: #dc3545; }
+      .grade-C { width: 40%; background-color: #fd7e14; }
+      .grade-B { width: 60%; background-color: #ffc107; }
+      .grade-A { width: 100%; background-color: #28a745; }
+
+      .btn-select {
+        transition: all 0.3s ease;
+      }
+      .btn-selected {
+        background-color: #007bff !important;
+        color: #fff !important;
+        border-color: #007bff !important;
+      }
+
+      #whatsapp-btn {
+        margin-top: 20px;
+        display: inline-block;
+        background-color: #25D366;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: 0.3s;
+        text-decoration: none;
+      }
+
+      #whatsapp-btn:hover {
+        background-color: #1ebe5d;
+        color: #fff;
+      }
+    </style>
+
+    <div class="table-responsive">
+      <table class="table table-bordered text-center align-middle">
+        <thead class="table-light">
+          <tr>
+            <th></th>
+            <th>Modelo</th>
+            <th>Altura</th>
+            <th>Diámetro</th>
+            <th>Potencia</th>
+            <th>Eficiencia Energética</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><button class="btn btn-outline-primary btn-sm btn-select">Seleccionar</button></td>
+            <td>10 L</td><td>54 cm</td><td>26 cm</td><td>600 W</td>
+            <td><div class="eff-bar"><span class="eff-fill grade-D"></span></div><small>"D" (Baja)</small></td>
+          </tr>
+          <tr>
+            <td><button class="btn btn-outline-primary btn-sm btn-select">Seleccionar</button></td>
+            <td>20 L</td><td>42 cm</td><td>39 cm</td><td>800 W</td>
+            <td><div class="eff-bar"><span class="eff-fill grade-C"></span></div><small>"C" (Moderada)</small></td>
+          </tr>
+          <tr>
+            <td><button class="btn btn-outline-primary btn-sm btn-select">Seleccionar</button></td>
+            <td>30 L</td><td>52 cm</td><td>39 cm</td><td>1000 W</td>
+            <td><div class="eff-bar"><span class="eff-fill grade-B"></span></div><small>"B" (Buena)</small></td>
+          </tr>
+          <tr>
+            <td><button class="btn btn-outline-primary btn-sm btn-select">Seleccionar</button></td>
+            <td>45 L</td><td>78 cm</td><td>39 cm</td><td>1000 W</td>
+            <td><div class="eff-bar"><span class="eff-fill grade-B"></span></div><small>"B" (Buena)</small></td>
+          </tr>
+          <tr>
+            <td><button class="btn btn-outline-primary btn-sm btn-select">Seleccionar</button></td>
+            <td>60 L</td><td>86 cm</td><td>39 cm</td><td>1700 W</td>
+            <td><div class="eff-bar"><span class="eff-fill grade-A"></span></div><small>"A" (Alta)</small></td>
+          </tr>
+          <tr>
+            <td><button class="btn btn-outline-primary btn-sm btn-select">Seleccionar</button></td>
+            <td>85 L</td><td>114 cm</td><td>39 cm</td><td>1700 W</td>
+            <td><div class="eff-bar"><span class="eff-fill grade-B"></span></div><small>"B" (Buena)</small></td>
+          </tr>
+          <tr>
+            <td><button class="btn btn-outline-primary btn-sm btn-select">Seleccionar</button></td>
+            <td>100 L</td><td>134 cm</td><td>39 cm</td><td>1700 W</td>
+            <td><div class="eff-bar"><span class="eff-fill grade-A"></span></div><small>"A" (Alta)</small></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- WhatsApp Button -->
+    <div class="text-center">
+      <a id="whatsapp-btn" href="#" target="_blank" style="background-color: #0d6efd;">Consultar precio por WhatsApp</a>
+    </div>
+
+    <script>
+      const buttons = document.querySelectorAll('.btn-select');
+      const whatsappBtn = document.getElementById('whatsapp-btn');
+      const modelos = [];
+
+      buttons.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+          const model = btn.closest('tr').children[1].innerText;
+
+          if (btn.classList.contains('btn-selected')) {
+            btn.classList.remove('btn-selected');
+            btn.innerText = 'Seleccionar';
+            const i = modelos.indexOf(model);
+            if (i > -1) modelos.splice(i, 1);
+          } else {
+            btn.classList.add('btn-selected');
+            btn.innerText = '✓ Seleccionado';
+            modelos.push(model);
+          }
+
+          const mensaje = `Hola, quisiera consultar el precio de los siguientes modelos: ${modelos.join(', ')}`;
+          whatsappBtn.href = `https://wa.me/59898508701?text=${encodeURIComponent(mensaje)}`;
+        });
+      });
+    </script>
 
   </div>
 </section>
-          
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Section -->
 
        <section class="py-5 bg-white">
   <div class="container">
