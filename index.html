@@ -795,72 +795,64 @@ Calefones para toda la vida !”</p>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="form-wrapper" data-aos="fade-up" data-aos-delay="400">
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                <div class="row">
-                  <div class="col-md-6 form-group">
-                    <div class="input-group">
-                      <span class="input-group-text"><i class="bi bi-person"></i></span>
-                      <input type="text" name="name" class="form-control" placeholder="Tu nombre*" required="">
-                    </div>
-                  </div>
-                  <div class="col-md-6 form-group">
-                    <div class="input-group">
-                      <span class="input-group-text"><i class="bi bi-envelope"></i></span>
-                      <input type="email" class="form-control" name="email" placeholder="Correo electronico*" required="">
-                    </div>
-                  </div>
-                </div>
-                <div class="row mt-3">
-                  <div class="col-md-6 form-group">
-                    <div class="input-group">
-                      <span class="input-group-text"><i class="bi bi-phone"></i></span>
-                      <input type="text" class="form-control" name="phone" placeholder="Telefono*" required="">
-                    </div>
-                  </div>
-                  <div class="col-md-6 form-group">
-                    <div class="input-group">
-                      <span class="input-group-text"><i class="bi bi-list"></i></span>
-                      <select name="subject" class="form-control" required="">
-                        <option value="">Seleccionar Servicio*</option>
-                        <option value="Service 1">Consulta</option>
-                        <option value="Service 2">Mantenimiento Preventivo</option>
-                        <option value="Service 3">Reparaciones</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="form-group mt-3">
-                    <div class="input-group">
-                      <span class="input-group-text"><i class="bi bi-chat-dots"></i></span>
-                      <textarea class="form-control" name="message" rows="6" placeholder="Escriba su mensaje*" required=""></textarea>
-                    </div>
-                  </div>
-                  <div class="my-3">
-                    <div class="loading">Cargando</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Su consulta ha sido enviado correctamente. Nos comunicaremos a la brevedad</div>
-                  </div>
-                  <div class="text-center">
-                    <button type="submit">Enviar consulta</button>
-                  </div>
+        <form action="https://formsubmit.co/fpereirageido@gmail.com" method="POST" role="form" class="php-email-form">
+  <!-- Campos ocultos para configurar Formsubmit -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://webcalefonesorion.netlify.app/gracias.html">
+  <input type="hidden" name="_template" value="table">
 
-                </div>
-              </form>
-            </div>
-          </div>
+  <div class="row">
+    <div class="col-md-6 form-group">
+      <div class="input-group">
+        <span class="input-group-text"><i class="bi bi-person"></i></span>
+        <input type="text" name="name" class="form-control" placeholder="Tu nombre*" required>
+      </div>
+    </div>
+    <div class="col-md-6 form-group">
+      <div class="input-group">
+        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+        <input type="email" class="form-control" name="email" placeholder="Correo electrónico*" required>
+      </div>
+    </div>
+  </div>
 
-        </div>
-<form action="https://formsubmit.co/fpereirageido@gmail.com" method="POST">
-  <input type="text" name="nombre" placeholder="Tu nombre" required>
-  <input type="email" name="email" placeholder="Tu email" required>
-  <textarea name="mensaje" placeholder="Escribí tu mensaje" required></textarea>
+  <div class="row mt-3">
+    <div class="col-md-6 form-group">
+      <div class="input-group">
+        <span class="input-group-text"><i class="bi bi-phone"></i></span>
+        <input type="text" class="form-control" name="phone" placeholder="Teléfono*" required>
+      </div>
+    </div>
+    <div class="col-md-6 form-group">
+      <div class="input-group">
+        <span class="input-group-text"><i class="bi bi-list"></i></span>
+        <select name="subject" class="form-control" required>
+          <option value="">Seleccionar Servicio*</option>
+          <option value="Consulta">Consulta</option>
+          <option value="Mantenimiento Preventivo">Mantenimiento Preventivo</option>
+          <option value="Reparaciones">Reparaciones</option>
+        </select>
+      </div>
+    </div>
+  </div>
 
+  <div class="form-group mt-3">
+    <div class="input-group">
+      <span class="input-group-text"><i class="bi bi-chat-dots"></i></span>
+      <textarea class="form-control" name="message" rows="6" placeholder="Escriba su mensaje*" required></textarea>
+    </div>
+  </div>
 
-  <button type="submit">Enviar</button>
+  <div class="my-3">
+    <div class="loading">Cargando</div>
+    <div class="error-message"></div>
+    <div class="sent-message">Su consulta ha sido enviada correctamente. Nos comunicaremos a la brevedad.</div>
+  </div>
+
+  <div class="text-center">
+    <button class="btn btn-outline-primary btn-sm">Enviar consulta</button>
+  </div>
 </form>
-
       </div>
 
       <br>
